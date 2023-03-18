@@ -22,7 +22,7 @@ public class Product implements Serializable {
 	@Column(name = "name")
 	private String name;
 	
-	@Column(name= "cat_Id",nullable=false)
+	@Column(name= "cat_id",nullable=false)
 	private int catId;
 	
 	@Column(name= "image",nullable=false)
@@ -57,31 +57,29 @@ public class Product implements Serializable {
 	public void setCatId(int catId) {
 		this.catId = catId;
 	}
-	
-	
-    public String getImageURL() {
-        return imageURL;
-    }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
-    }
+	public String getImageURL() {
+			return imageURL;
+	}
 
-    public double getPrice() {
-        return price;
-    }
+	public void setImageURL(String imageURL) {
+			this.imageURL = imageURL;
+	}
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+	public double getPrice() {
+			return price;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public void setPrice(double price) {
+			this.price = price;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public String getDescription() {
+			return description;
+	}
 
+	public void setDescription(String description) {
+			this.description = description;
+	}
 
 }

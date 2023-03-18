@@ -1,6 +1,5 @@
 package com.tus.ecommerce.productwebapp;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,9 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.tus.ecommerce.productwebapp.dao.ProductRepository;
 import com.tus.ecommerce.productwebapp.entity.Product;
@@ -46,7 +43,6 @@ public class ProductService {
 		Product savedProduct = prodRepo.save(product);
 		return new ResponseEntity<Product>(savedProduct, HttpStatus.OK);
 	}
-	
 	
 	@DeleteMapping(value="/product/{id}")
 	ResponseEntity<Product> deleteProduct(@PathVariable("id") Long id) {
