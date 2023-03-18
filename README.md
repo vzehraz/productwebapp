@@ -56,7 +56,6 @@ When making a `POST` request to the `/product` endpoint, the request body should
 
 ````json
 {
-  "id": 2,
   "name": "Smartwatch 2000",
   "catId": 1,
   "imageURL": "https://example.com/smartwatch2000.jpg",
